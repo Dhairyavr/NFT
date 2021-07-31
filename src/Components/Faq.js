@@ -87,6 +87,18 @@ const data = {
         </div>
       ),
     },
+    {
+      title: (
+        <div style={{ fontWeight: "700" }}>
+        How to acquire testnet currency ?
+        </div>
+      ),
+      content: (
+        <div style={{ textAlign: "left" }}>
+         <a href="https://faucet.rinkeby.io/">https://faucet.rinkeby.io/</a>
+        </div>
+      ),
+    },
 
     {
       title: (
@@ -122,7 +134,7 @@ const style = {
 };
 export default function Faqs() {
   return (
-    <section id="faq">
+    <section id="faq" style={{width:"100vw",}}>
       <Faq data={data} styles={style} config={config} />
     </section>
   );
